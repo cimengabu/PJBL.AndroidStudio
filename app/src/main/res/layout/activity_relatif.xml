@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".RelatifActivity">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Pendaftaran"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/tvJudul"
+        android:layout_marginTop="10dp"
+        android:hint="Masukkan Nama Lengkap"
+        android:inputType="textPersonName"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etNomor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etNama"
+        android:layout_marginTop="8dp"
+        android:hint="Masukkan Nomor Handphone"
+        android:inputType="phone"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etNomor"
+        android:layout_marginTop="8dp"
+        android:hint="Masukkan Alamat"
+        android:inputType="textPostalAddress"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvAgama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAlamat"
+        android:layout_marginTop="10dp"
+        android:text="Agama"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spAgama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvAgama"
+        android:layout_marginTop="8dp"
+        android:entries="@array/agama" />
+
+    <TextView
+        android:id="@+id/tvKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spAgama"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvKelamin"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki" />
+
+        <RadioButton
+            android:id="@+id/rbPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:layout_marginStart="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvHobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgKelamin"
+        android:layout_marginTop="10dp"
+        android:text="Hobi"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cbMembaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHobi"
+        android:text="Membaca" />
+
+    <CheckBox
+        android:id="@+id/cbMakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbMembaca"
+        android:text="Makan" />
+
+    <CheckBox
+        android:id="@+id/cbTidur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbMakan"
+        android:text="Tidur" />
+
+    <CheckBox
+        android:id="@+id/cbOlahraga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbTidur"
+        android:text="Olahraga" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:text="Simpan"
+        android:backgroundTint="#4E8920"
+        android:layout_below="@+id/cbOlahraga"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
