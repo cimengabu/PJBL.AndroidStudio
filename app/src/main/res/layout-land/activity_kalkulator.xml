@@ -17,7 +17,6 @@
         android:textAlignment="textEnd"
         android:hint="0"
         android:padding="10dp"
-        android:background="#ECECEC"
         android:focusable="false"
         android:cursorVisible="false"
         app:layout_constraintTop_toTopOf="parent"

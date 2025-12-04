@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#F5F5F5">
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,7 +66,6 @@
                     android:text="Informasi Pribadi"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
                     android:layout_marginBottom="12dp"/>
 
                 <!-- Sekolah -->
@@ -82,7 +80,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Sekolah"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -90,8 +87,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="SMKN 6 SURAKARTA"
-                        android:textColor="#333333"/>
+                        android:text="SMKN 6 SURAKARTA" />
                 </LinearLayout>
 
                 <!-- Alamat -->
@@ -106,7 +102,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Alamat"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -114,8 +109,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="Waru,Pandanan, Wonosari, Klaten"
-                        android:textColor="#333333"/>
+                        android:text="Waru,Pandanan, Wonosari, Klaten" />
                 </LinearLayout>
 
                 <!-- Tempat Tanggal Lahir -->
@@ -130,7 +124,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="TTL"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -138,8 +131,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="Jakarta, 01 Januari 2009"
-                        android:textColor="#333333"/>
+                        android:text="Jakarta, 01 Januari 2009" />
                 </LinearLayout>
 
                 <!-- Jenis Kelamin -->
@@ -154,7 +146,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Jenis Kelamin"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -162,8 +153,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="Perempuan"
-                        android:textColor="#333333"/>
+                        android:text="Perempuan" />
                 </LinearLayout>
 
                 <!-- Email -->
@@ -178,7 +168,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Email"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -186,8 +175,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="indah"
-                        android:textColor="#333333"/>
+                        android:text="indah" />
                 </LinearLayout>
 
                 <!-- No. Telepon -->
@@ -201,7 +189,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="No. Telepon"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -209,8 +196,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="081234567890"
-                        android:textColor="#333333"/>
+                        android:text="081234567890" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -235,7 +221,6 @@
                     android:text="Informasi Akademik"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
                     android:layout_marginBottom="12dp"/>
 
                 <!-- Jurusan -->
@@ -250,7 +235,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Jurusan"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -258,8 +242,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="Rekayasa Perangkat Lunak"
-                        android:textColor="#333333"/>
+                        android:text="Rekayasa Perangkat Lunak" />
                 </LinearLayout>
 
                 <!-- Kelas -->
@@ -274,7 +257,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Kelas"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -282,8 +264,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="XI RPL"
-                        android:textColor="#333333"/>
+                        android:text="XI RPL" />
                 </LinearLayout>
 
                 <!-- NIS -->
@@ -297,7 +278,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="NIS"
-                        android:textColor="#666666"
                         android:textStyle="bold"/>
 
                     <TextView
@@ -305,8 +285,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="123456789"
-                        android:textColor="#333333"/>
+                        android:text="123456789" />
                 </LinearLayout>
 
             </LinearLayout>

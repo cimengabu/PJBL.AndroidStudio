@@ -1,16 +1,17 @@
 package com.Indah.aplikasipertama
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 class Kalkulator : AppCompatActivity() {
 
     private lateinit var display: EditText
-    private var lastNumeric: Boolean = false
-    private var stateError: Boolean = false
-    private var lastDot: Boolean = false
+    private var input = ""
+    private var operator = ""
+    private var value1 = 0.0
+    private var value2 = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,153 +19,84 @@ class Kalkulator : AppCompatActivity() {
 
         display = findViewById(R.id.TEXT)
 
-        // Angka
-        setNumberListener(R.id.btn0)
-        setNumberListener(R.id.btn1)
-        setNumberListener(R.id.btn2)
-        setNumberListener(R.id.btn3)
-        setNumberListener(R.id.btn4)
-        setNumberListener(R.id.btn5)
-        setNumberListener(R.id.btn6)
-        setNumberListener(R.id.btn7)
-        setNumberListener(R.id.btn8)
-        setNumberListener(R.id.btn9)
+        val btnNumbers = listOf(
+            R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3,
+            R.id.btn4, R.id.btn5, R.id.btn6,
+            R.id.btn7, R.id.btn8, R.id.btn9
+        )
 
-        // Tombol Operator
-        setOperatorListener(R.id.btnPlus)
-        setOperatorListener(R.id.btnminus)
-        setOperatorListener(R.id.btnDevide)
-        setOperatorListener(R.id.btnX)
+        // Tombol angka ditekan → tampil
+        for (id in btnNumbers) {
+            findViewById<Button>(id).setOnClickListener {
+                val text = (it as Button).text.toString()
+                input += text
+                display.setText(input)
+            }
+        }
 
-        // Tombol titik
+        findViewById<Button>(R.id.btnPlus).setOnClickListener { setOperator("+") }
+        findViewById<Button>(R.id.btnminus).setOnClickListener { setOperator("-") }
+        findViewById<Button>(R.id.btnX).setOnClickListener { setOperator("*") }
+        findViewById<Button>(R.id.btnDevide).setOnClickListener { setOperator("/") }
+
+        // tombol persen
         findViewById<Button>(R.id.btnPersen).setOnClickListener {
-            if (lastNumeric && !lastDot) {
-                display.append(".")
-                lastNumeric = false
-                lastDot = true
+            if (input.isNotEmpty()) {
+                val result = input.toDouble() / 100
+                displayFormatted(result)
+                input = display.text.toString()
             }
         }
 
-        // Tombol clear
-        findViewById<Button>(R.id.btnC).setOnClickListener {
-            display.setText("")
-            lastNumeric = false
-            stateError = false
-            lastDot = false
-        }
-
-        // Tombol delete (hapus 1 karakter)
-        findViewById<Button>(R.id.btnDelate).setOnClickListener {
-            val text = display.text.toString()
-            if (text.isNotEmpty()) {
-                display.setText(text.dropLast(1))
-            }
-        }
-
-        // Tombol sama dengan
+        // tombol sama dengan
         findViewById<Button>(R.id.btnequal).setOnClickListener {
-            onEqual()
-        }
-    }
+            if (input.isNotEmpty() && operator.isNotEmpty()) {
+                value2 = input.toDouble()
+                val result = when (operator) {
+                    "+" -> value1 + value2
+                    "-" -> value1 - value2
+                    "*" -> value1 * value2
+                    "/" -> if (value2 != 0.0) value1 / value2 else Double.NaN
+                    else -> 0.0
+                }
 
-    private fun setNumberListener(id: Int) {
-        findViewById<Button>(id).setOnClickListener {
-            display.append((it as Button).text)
-            lastNumeric = true
-        }
-    }
-
-    private fun setOperatorListener(id: Int) {
-        findViewById<Button>(id).setOnClickListener {
-            if (lastNumeric && !stateError) {
-                display.append((it as Button).text)
-                lastNumeric = false
-                lastDot = false
+                displayFormatted(result)
+                input = display.text.toString()
+                operator = ""
             }
         }
-    }
 
-    private fun onEqual() {
-        if (lastNumeric && !stateError) {
-            try {
-                val input = display.text.toString()
-                    .replace("X", "*")
+        // tombol clear
+        findViewById<Button>(R.id.btnC).setOnClickListener {
+            input = ""
+            operator = ""
+            display.setText("0")
+        }
 
-                val result = eval(input)
-                display.setText(result.toString())
-            } catch (e: Exception) {
-                display.setText("Error")
-                stateError = true
-                lastNumeric = false
+        // tombol delete 1 digit
+        findViewById<Button>(R.id.btnDelate).setOnClickListener {
+            if (input.isNotEmpty()) {
+                input = input.dropLast(1)
+                display.setText(if (input.isEmpty()) "0" else input)
             }
         }
     }
 
-    // Fungsi hitung
-    private fun eval(input: String): Double {
-        return object : Any() {
-            var pos = -1
-            var ch = 0
+    private fun setOperator(op: String) {
+        if (input.isNotEmpty()) {
+            value1 = input.toDouble()
+            operator = op
+            input = ""
+        }
+    }
 
-            fun nextChar() {
-                ch = if (++pos < input.length) input[pos].code else -1
-            }
-
-            fun eat(charToEat: Int): Boolean {
-                while (ch == ' '.code) nextChar()
-                if (ch == charToEat) {
-                    nextChar()
-                    return true
-                }
-                return false
-            }
-
-            fun parse(): Double {
-                nextChar()
-                val x = parseExpression()
-                if (pos < input.length) throw RuntimeException("Unexpected: " + input[pos])
-                return x
-            }
-
-            fun parseExpression(): Double {
-                var x = parseTerm()
-                while (true) {
-                    when {
-                        eat('+'.code) -> x += parseTerm()
-                        eat('-'.code) -> x -= parseTerm()
-                        else -> return x
-                    }
-                }
-            }
-
-            fun parseTerm(): Double {
-                var x = parseFactor()
-                while (true) {
-                    when {
-                        eat('*'.code) -> x *= parseFactor()
-                        eat('/'.code) -> x /= parseFactor()
-                        else -> return x
-                    }
-                }
-            }
-
-            fun parseFactor(): Double {
-                if (eat('+'.code)) return parseFactor()
-                if (eat('-'.code)) return -parseFactor()
-
-                var x: Double
-                val startPos = pos
-                if (eat('('.code)) {
-                    x = parseExpression()
-                    eat(')'.code)
-                } else if ((ch in '0'.code..'9'.code) || ch == '.'.code) {
-                    while ((ch in '0'.code..'9'.code) || ch == '.'.code) nextChar()
-                    x = input.substring(startPos, pos).toDouble()
-                } else {
-                    throw RuntimeException("Unexpected: " + input[pos])
-                }
-                return x
-            }
-        }.parse()
+    // Format hasil supaya tidak muncul .0 kalau hasil bilangan bulat
+    private fun displayFormatted(result: Double) {
+        val text = if (result % 1 == 0.0) {
+            result.toInt().toString()
+        } else {
+            result.toString()
+        }
+        display.setText(text)
     }
 }
