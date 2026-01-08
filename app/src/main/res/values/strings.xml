@@ -16,4 +16,73 @@
         <item>Fahrenheit</item>
         <item>Kelvin</item>
     </string-array>
+    <string name="Aplikasi_Ayaa">Aplikasi Ayaa</string>
+    <string name="Menu_Lain">Menu Lain</string>
+    <string name="Form">Form</string>
+    <string name="Profil">Profil</string>
+    <string name="Kalkulator">Kalkulator</string>
+    <string name="Transaksi">Transaksi</string>
+    <string name="Temperatur">Temperatur</string>
+    <string name="Keluar">Keluar</string>
+
+    <string name="Keluar_Aplikasi">Keluar Aplikasi?</string>
+    <string name="Yakin_ingin_keluar_aplikasi_ini">Yakin ingin keluar aplikasi ini?</string>
+    <string name="Ya">Ya</string>
+    <string name="Tidak">Tidak</string>
+
+    <string name="Warung_makan">Warung makan</string>
+    <string name="Nama_Pelanggan">Nama Pelanggan</string>
+    <string name="Nasi_Bakar">Nasi Bakar</string>
+    <string name="Jumlah">Jumlah</string>
+    <string name="Ayam_Kremes">Ayam kremes</string>
+    <string name="Sate_Ayam">Sate Ayam</string>
+    <string name="Mie_Goreng">Mie Goreng</string>
+    <string name="Memesan">Memesan</string>
+
+    <string name="Konversi_Suhu">Konversi Suhu</string>
+    <string name="Celcius">Celsius</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="Kelvin">Kelvin</string>
+    <string name="Masukan_Angka">Input Angka</string>
+    <string name="Konversi">Konversi</string>
+
+    <string name="Nota_Pembelian">Nota Pembelian</string>
+    <string name="Nama">Nama:</string>
+    <string name="Jumlah1">Jumlah:</string>
+
+    <string name="Informasi_Pribadi">Informasi Pribadi</string>
+    <string name="Sekolah">Sekolah</string>
+    <string name="Alamat">ALamat</string>
+    <string name="TTL">TTL</string>
+    <string name="Jenis_Kelamin">Jenis Kelamin</string>
+    <string name="Email">Email</string>
+    <string name="No.Telepon">No.Telepon</string>
+    <string name="Informasi_Akademik">Informasi Akademik</string>
+    <string name="Jurusan">Jurusan</string>
+    <string name="Kelas">Kelas</string>
+    <string name="NIS">NIS</string>
+    <string name="Jakarta_01_januari_2009">Jakarta, 01 Januari 20009</string>
+    <string name="Perempuan">Perempuan</string>
+    <string name="Rekayasa_Perangkat_Lunak">Rekayasa Perangkat Lunak</string>
+
+    <string name="Form_Pendaftaran">Form Pendaftaran</string>
+    <string name="Masukan_Nama_Lengkap">Masukan Nama Lengkap</string>
+    <string name="Masukan_Nomor_Telepon">Masukan Nomer Telepon</string>
+    <string name="Masukan_Alamat">Masukan Alamat</string>
+    <string name="Agama">Agama</string>
+    <string name="Islam">Islam</string>
+    <string name="Kristen">Kristen</string>
+    <srting name="Katholik">Katholik</srting>
+    <string name="Budha">Budha</string>
+    <string name="Hindu">Hindu</string>
+    <string name="Konghuchu">Konghuchu</string>
+    <string name="Laki_Laki">Laki-Laki</string>
+    <string name="Hobi">Hobi</string>
+    <string name="Membaca">Membaca</string>
+    <string name="Makan">Makan</string>
+    <string name="Tidur">Tidur</string>
+    <string name="Olahraga">OLahraga</string>
+    <string name="Simpan">Simpan</string>
+
 </resources>
+

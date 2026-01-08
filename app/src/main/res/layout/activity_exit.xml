@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Keluar Aplikasi?"
+        android:text="@string/Keluar_Aplikasi"
         android:textSize="18sp"
         android:textStyle="bold"
         android:paddingBottom="10dp"/>
@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yakin ingin keluar dari aplikasi ini?"
+        android:text="@string/Yakin_ingin_keluar_aplikasi_ini"
         android:textSize="14sp"
         android:paddingBottom="20dp"/>
 
@@ -30,13 +30,13 @@
             android:id="@+id/btnNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tidak"/>
+            android:text="@string/Tidak"/>
 
         <Button
             android:id="@+id/btnYes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ya"
+            android:text="@string/Ya"
             android:layout_marginStart="10dp"/>
     </LinearLayout>
 

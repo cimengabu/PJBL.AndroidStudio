@@ -13,7 +13,7 @@
             android:id="@+id/tvJudul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NOTA PEMBELIAN"
+            android:text="@string/Nota_Pembelian"
             android:textSize="26sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -23,7 +23,7 @@
             android:id="@+id/tvNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama: "
+            android:text="@string/Nama"
             android:textSize="18sp"
             android:layout_marginBottom="12dp"/>
 
@@ -38,7 +38,7 @@
             android:id="@+id/tvTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total: "
+            android:text="@string/Jumlah1"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>

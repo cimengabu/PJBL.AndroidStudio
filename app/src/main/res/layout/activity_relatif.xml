@@ -12,7 +12,7 @@
         android:id="@+id/tvJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Form Pendaftaran"
+        android:text="@string/Form_Pendaftaran"
         android:textAlignment="center"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -24,7 +24,7 @@
         android:layout_height="54dp"
         android:layout_below="@id/tvJudul"
         android:layout_marginTop="10dp"
-        android:hint="Masukkan Nama Lengkap"
+        android:hint="@string/Masukan_Nama_Lengkap"
         android:inputType="textPersonName"
         android:textSize="15sp" />
 
@@ -34,7 +34,7 @@
         android:layout_height="48dp"
         android:layout_below="@id/etNama"
         android:layout_marginTop="8dp"
-        android:hint="Masukkan Nomor Handphone"
+        android:hint="@string/Masukan_Nomor_Telepon"
         android:inputType="phone"
         android:textSize="15sp" />
 
@@ -44,7 +44,7 @@
         android:layout_height="48dp"
         android:layout_below="@id/etNomor"
         android:layout_marginTop="8dp"
-        android:hint="Masukkan Alamat"
+        android:hint="@string/Masukan_Alamat"
         android:inputType="textPostalAddress"
         android:textSize="15sp" />
 
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etAlamat"
         android:layout_marginTop="10dp"
-        android:text="Agama"
+        android:text="@string/Agama"
         android:textSize="17sp"
         android:textStyle="bold" />
 
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/spAgama"
         android:layout_marginTop="10dp"
-        android:text="Jenis Kelamin"
+        android:text="@string/Jenis_Kelamin"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -88,13 +88,13 @@
             android:id="@+id/rbLaki"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Laki-Laki" />
+            android:text="@string/Laki_Laki" />
 
         <RadioButton
             android:id="@+id/rbPerempuan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perempuan"
+            android:text="@string/Perempuan"
             android:layout_marginStart="20dp" />
     </RadioGroup>
 
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/rgKelamin"
         android:layout_marginTop="10dp"
-        android:text="Hobi"
+        android:text="@string/Hobi"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -113,35 +113,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvHobi"
-        android:text="Membaca" />
+        android:text="@string/Membaca" />
 
     <CheckBox
         android:id="@+id/cbMakan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cbMembaca"
-        android:text="Makan" />
+        android:text="@string/Makan" />
 
     <CheckBox
         android:id="@+id/cbTidur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cbMakan"
-        android:text="Tidur" />
+        android:text="@string/Tidur" />
 
     <CheckBox
         android:id="@+id/cbOlahraga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cbTidur"
-        android:text="Olahraga" />
+        android:text="@string/Olahraga" />
 
     <Button
         android:id="@+id/btnSimpan"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_centerHorizontal="true"
-        android:text="Simpan"
+        android:text="@string/Simpan"
         android:backgroundTint="#4E8920"
         android:layout_below="@+id/cbOlahraga"
         android:layout_marginTop="20dp"

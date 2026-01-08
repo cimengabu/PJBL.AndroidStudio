@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ayaa App"
+            android:text="@string/Aplikasi_Ayaa"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_gravity="center"
@@ -45,7 +45,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Menu Utama"
+                    android:text="@string/Menu_Lain"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
 
@@ -81,7 +81,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Form"
+                                android:text="@string/Form"
                                 android:textSize="13sp"
                                 android:textColor="@color/black"/>
                         </LinearLayout>
@@ -113,7 +113,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Profil"
+                                android:text="@string/Profil"
                                 android:textSize="13sp"
                                 android:textColor="@color/black"/>
                         </LinearLayout>
@@ -139,7 +139,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Menu Lain"
+                    android:text="@string/Menu_Lain"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
 
@@ -175,7 +175,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Kalkulator"
+                                android:text="@string/Kalkulator"
                                 android:textSize="11sp"
                                 android:textColor="@color/black"/>
                         </LinearLayout>
@@ -207,7 +207,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Transaksi"
+                                android:text="@string/Transaksi"
                                 android:textSize="13sp"
                                 android:textColor="@color/black"/>
                         </LinearLayout>
@@ -233,7 +233,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Menu Lain"
+                    android:text="@string/Menu_Lain"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp" />
 
@@ -269,7 +269,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Temperature"
+                                android:text="@string/Temperatur"
                                 android:textSize="13sp"
                                 android:textColor="@color/black"/>
                         </LinearLayout>
@@ -301,7 +301,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Keluar"
+                                android:text="@string/Keluar"
                                 android:textSize="13sp"
                                 android:textColor="@color/black"/>
                         </LinearLayout>
