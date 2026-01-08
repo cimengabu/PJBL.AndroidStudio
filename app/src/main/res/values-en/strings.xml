@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Christian</item>
+        <item>Catholic</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Confucianism</item>
+    </string-array>
+
+
+    <string name="app_name">RelatifActivity</string>
+    <string name="Aplikasi_Ayaa">Ayaa App</string>
+    <string name="Menu_Lain">others menu</string>
+    <string name="Form">Form</string>
+    <string name="Profil">Profile</string>
+    <string name="Kalkulator">calculator</string>
+    <string name="Transaksi">Transaction</string>
+    <string name="Temperatur">Temperature</string>
+    <string name="Keluar">Exit</string>
+
+    <string name="Keluar_Aplikasi">Exit the aplication?</string>
+    <string name="Yakin_ingin_keluar_aplikasi_ini">Are you sure exit this aplication?</string>
+    <string name="Ya">Yes</string>
+    <string name="Tidak">No</string>
+
+    <string name="Warung_makan">Food Stalls</string>
+    <string name="Nama_Pelanggan">Customer Name</string>
+    <string name="Nasi_Bakar">Grilled rice</string>
+    <string name="Jumlah">Total</string>
+    <string name="Ayam_Kremes">Crispy Chicken</string>
+    <string name="Sate_Ayam">Chicken Satay</string>
+    <string name="Mie_Goreng">Fried Noodles</string>
+    <string name="Memesan">Order</string>
+
+    <string name="Konversi_Suhu">Termperature Conversion</string>
+    <string name="Celcius">Celsius</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="Kelvin">Kelvin</string>
+    <string name="Masukan_Angka">Input Numbers</string>
+    <string name="Konversi">Conversion</string>
+
+    <string name="Nota_Pembelian">Purchase Orders</string>
+    <string name="Nama">Name:</string>
+    <string name="Jumlah1">Total:</string>
+
+    <string name="Informasi_Pribadi">Personal Information</string>
+    <string name="Sekolah">School</string>
+    <string name="Alamat">Addres</string>
+    <string name="TTL">PoDoB</string>
+    <string name="Jenis_Kelamin">Gender</string>
+    <string name="Email">Email</string>
+    <string name="No.Telepon">Telephone Number</string>
+    <string name="Informasi_Akademik">Academic Information</string>
+    <string name="Jurusan">Study Program</string>
+    <string name="Kelas">Class</string>
+    <string name="NIS">NISN</string>
+    <string name="Jakarta_01_januari_2009">Jakarta, 01 January 20009</string>
+    <string name="Perempuan">Female </string>
+    <string name="Rekayasa_Perangkat_Lunak">Software Engineering</string>
+
+    <string name="Form_Pendaftaran">Registration Form</string>
+    <string name="Masukan_Nama_Lengkap">Enter Full Name</string>
+    <string name="Masukan_Nomor_Telepon">Enter Phone Number</string>
+    <string name="Masukan_Alamat">Enter Address</string>
+    <string name="Agama">Religion</string>
+    <string name="Islam">Islam</string>
+    <string name="Kristen">Christian</string>
+    <srting name="Katholik">Catholic</srting>
+    <string name="Budha">Buddha</string>
+    <string name="Hindu">Hindu</string>
+    <string name="Konghuchu">Confucianism</string>
+    <string name="Laki_Laki">Male</string>
+    <string name="Hobi">Hobby</string>
+    <string name="Membaca">Read</string>
+    <string name="Makan">Eat</string>
+    <string name="Tidur">Sleep</string>
+    <string name="Olahraga">sports</string>
+    <string name="Simpan">Save</string>
+
+</resources>
